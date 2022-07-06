@@ -1,16 +1,16 @@
 "use strict";
-const PESSOA = {
+var PESSOA = {
     nome: "Mariana",
     idade: 28,
     profissao: "desenvolvedora"
 };
 PESSOA.idade = 29;
-const ANDRE = {
+var ANDRE = {
     nome: "André",
     idade: 25,
     profissao: "pintor"
 };
-const PAULA = {
+var PAULA = {
     nome: "Paula",
     idade: 25,
     profissao: "Desenvolvedora"
@@ -23,30 +23,32 @@ var EProfissiao;
     EProfissiao[EProfissiao["Pintor"] = 3] = "Pintor";
     EProfissiao[EProfissiao["JogadorDeFutebol"] = 4] = "JogadorDeFutebol";
 })(EProfissiao || (EProfissiao = {}));
-const VANESSA = {
+var VANESSA = {
     nome: "Vanessa",
     idade: 23,
     profissao: EProfissiao.Desenvolvedora
 };
-const MARIA = {
+var MARIA = {
     nome: "Maria",
     idade: 23,
     profissao: EProfissiao.Desenvolvedora
 };
-const JESSICA = {
+var JESSICA = {
     nome: "Jessica",
     idade: 21,
     profissao: EProfissiao.Desenvolvedora,
     materia: ['Matemática Discreta', 'Programação']
 };
-const MONICA = {
+var MONICA = {
     nome: "Mônica",
     idade: 21,
     materia: ['Matemática Discreta', 'Programação']
 };
 function listar(lista) {
-    for (const item of lista) {
+    for (var _i = 0, lista_1 = lista; _i < lista_1.length; _i++) {
+        var item = lista_1[_i];
         console.log('- ', item);
     }
 }
 listar(MONICA.materia);
+//# sourceMappingURL=objetos_lista_ts.js.map

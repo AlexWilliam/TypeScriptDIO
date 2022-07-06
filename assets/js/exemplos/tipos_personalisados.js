@@ -10,3 +10,4 @@ function somarValores(input1, input2) {
 console.log(somarValores(1, 5));
 console.log(somarValores('olá, ', 'tudo bem?'));
 console.log(somarValores('1', '5'));
+//# sourceMappingURL=tipos_personalisados.js.map
