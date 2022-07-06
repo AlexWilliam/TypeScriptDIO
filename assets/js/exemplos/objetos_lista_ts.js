@@ -1,54 +1,70 @@
 "use strict";
-var PESSOA = {
+/*const PESSOA = {
     nome: "Mariana",
     idade: 28,
     profissao: "desenvolvedora"
-};
+}
+
 PESSOA.idade = 29;
-var ANDRE = {
+
+const ANDRE: {nome: string, idade: number, profissao: string} = {
     nome: "André",
     idade: 25,
     profissao: "pintor"
-};
-var PAULA = {
+}
+
+const PAULA: {nome: string, idade: number, profissao: string} = {
     nome: "Paula",
     idade: 25,
     profissao: "Desenvolvedora"
-};
-var EProfissiao;
-(function (EProfissiao) {
-    EProfissiao[EProfissiao["Professora"] = 0] = "Professora";
-    EProfissiao[EProfissiao["Atriz"] = 1] = "Atriz";
-    EProfissiao[EProfissiao["Desenvolvedora"] = 2] = "Desenvolvedora";
-    EProfissiao[EProfissiao["Pintor"] = 3] = "Pintor";
-    EProfissiao[EProfissiao["JogadorDeFutebol"] = 4] = "JogadorDeFutebol";
-})(EProfissiao || (EProfissiao = {}));
-var VANESSA = {
+}
+
+enum EProfissiao {
+    Professora,
+    Desenvolvedora,
+    Pintor,
+    JogadorDeFutebol
+}
+
+interface IPessoa {
+    nome: string,
+    idade: number,
+    profissao?: EProfissiao
+}
+
+interface IEstudade extends IPessoa {
+    materia: string[]
+}
+
+const VANESSA: IPessoa = {
     nome: "Vanessa",
     idade: 23,
     profissao: EProfissiao.Desenvolvedora
-};
-var MARIA = {
+}
+const MARIA: IPessoa = {
     nome: "Maria",
     idade: 23,
     profissao: EProfissiao.Desenvolvedora
-};
-var JESSICA = {
+}
+
+const JESSICA: IEstudade = {
     nome: "Jessica",
     idade: 21,
     profissao: EProfissiao.Desenvolvedora,
     materia: ['Matemática Discreta', 'Programação']
-};
-var MONICA = {
+}
+
+const MONICA: IEstudade = {
     nome: "Mônica",
     idade: 21,
     materia: ['Matemática Discreta', 'Programação']
-};
-function listar(lista) {
-    for (var _i = 0, lista_1 = lista; _i < lista_1.length; _i++) {
-        var item = lista_1[_i];
+}
+
+function listar(lista: string[]){
+    for(const item of lista){
         console.log('- ', item);
     }
 }
-listar(MONICA.materia);
+
+listar(MONICA.materia);*/ 
 //# sourceMappingURL=objetos_lista_ts.js.map

@@ -1,4 +1,4 @@
-const PESSOA = {
+/*const PESSOA = {
     nome: "Mariana",
     idade: 28,
     profissao: "desenvolvedora"
@@ -20,7 +20,6 @@ const PAULA: {nome: string, idade: number, profissao: string} = {
 
 enum EProfissiao {
     Professora,
-    Atriz,
     Desenvolvedora,
     Pintor,
     JogadorDeFutebol
@@ -66,4 +65,4 @@ function listar(lista: string[]){
     }
 }
 
-listar(MONICA.materia);
+listar(MONICA.materia);*/
